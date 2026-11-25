@@ -1,0 +1,27 @@
+seed 42, 15 tick, cùng quần thể người vay cho hai kịch bản
+
+[Sốc đơn tài sản] WETH -35%
+  Người vay bị thanh lý (tích luỹ): 60
+  Vụ thanh lý: 185 | giá trị thế chấp bị tịch thu: 1,351,807 USD | nợ xấu: 291,012 USD
+  Cuối kỳ: an toàn 4, rủi ro 0, HF<1 56; HF nhỏ nhất 0.00
+  Hệ số khuếch đại kênh AMM (nợ thanh lý bật/tắt kênh): 9.96x
+
+  tick: người vay bị thanh lý mỗi tick -> 7 15 32 56 46 17 8 0 1 1 0 0 0 2 0
+
+[Sốc đa tài sản] WETH -22%, WBTC -15%, LINK -15%
+  Người vay bị thanh lý (tích luỹ): 60
+  Vụ thanh lý: 173 | giá trị thế chấp bị tịch thu: 1,276,412 USD | nợ xấu: 331,135 USD
+  Cuối kỳ: an toàn 5, rủi ro 0, HF<1 55; HF nhỏ nhất 0.00
+  Hệ số khuếch đại kênh AMM (nợ thanh lý bật/tắt kênh): 8.98x
+
+  tick: người vay bị thanh lý mỗi tick -> 8 28 54 49 18 8 5 2 1 0 0 0 0 0 0
+
+Quét hệ số nhân λ cho sốc đa tài sản (λ = 1 là 22/15/15; λ ≈ 0,68 là 15/10/10):
+  λ     WETH/WBTC/LINK     Người vay bị TL   Vụ TL  Nợ xấu ($)  HF min tick 1
+  0.5   11/8/8                           0       0           0           1.08
+  0.7   15/10/10                         0       0           0           1.04
+  0.85  19/13/13                         0       0           0           1.00
+  1.0   22/15/15                        60     173     331,135           0.83
+  1.25  28/19/19                        60     149     487,939           0.45
+
+Đã lưu 4 file CSV vào '/home/claude/work/results/scen'.

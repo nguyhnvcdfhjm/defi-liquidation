@@ -1,0 +1,54 @@
+30 seed, 15 tick, sốc WETH -35%
+
+arm                                          baseline       nash_active    planner_active            nash_all         planner_all
+liquidated_debt                        1,246.5 ± 10.7     1,260.2 ± 9.8     1,248.8 ± 9.9        159.8 ± 24.0        159.8 ± 24.0
+bad_debt                                 327.2 ± 14.1      288.2 ± 16.2      277.9 ± 16.3           1.7 ± 1.0           1.7 ± 1.0
+liq_borrowers                              60.0 ± 0.0        60.0 ± 0.0        60.0 ± 0.0           7.3 ± 0.8           7.3 ± 0.8
+indirect_share                             51.5 ± 0.8        51.4 ± 0.8        52.1 ± 0.8           0.0 ± 0.0           0.0 ± 0.0
+bonus_paid                                109.5 ± 0.8       110.6 ± 0.7       110.1 ± 0.7          11.5 ± 1.5          11.5 ± 1.5
+repaid                                     93.6 ± 8.6       122.9 ± 8.4       131.8 ± 9.2        162.6 ± 14.8         63.0 ± 10.4
+social_cost                              439.5 ± 14.5      402.5 ± 16.5      391.9 ± 16.5          18.1 ± 2.9          15.1 ± 2.7
+min_WBTC                             19,405.9 ± 341.9  19,840.6 ± 404.7  19,889.8 ± 407.0  46,353.7 ± 1,206.2  46,353.7 ± 1,206.2
+min_LINK                                    3.9 ± 0.1         4.0 ± 0.1         4.0 ± 0.1          15.0 ± 0.0          15.0 ± 0.0
+Δ nợ xấu vs gốc (nghìn $)                         NaN       -39.0 ± 8.4       -49.3 ± 8.1       -325.5 ± 13.9       -325.5 ± 13.9
+% seed nợ xấu giảm                                NaN               100               100                 100                 100
+Δ thiệt hại xã hội vs gốc (nghìn $)               NaN       -37.1 ± 8.2       -47.6 ± 7.8       -421.5 ± 14.0       -424.4 ± 14.1
+
+Giá của sự vô chính phủ:
+nhóm người chơi  thiệt hại Nash (nghìn $)  thiệt hại planner (nghìn $)  PoA (tỷ số trung bình, mỗi seed)  PoA (tỷ số của trung bình)
+         active                   402.454                      391.920                             1.027                       1.027
+            all                    18.054                       15.068                             1.237                       1.198
+
+Chất lượng nghiệm: epsilon lớn nhất = 0.0017 (tỷ lệ nợ), số lần fictitious play không hội tụ = 43
+Đã vẽ game_compare.png
+
+Độ nhạy (Nash, 10 seed):
+players   param  value  bad_debt_k  bad_debt_vs_base_%  social_cost_vs_base_%  repaid_k  eps_max
+ active     phi   0.00      267.48              -13.55                  -9.53    131.73      0.0
+ active     phi   0.01      267.48              -13.55                  -9.56    127.93      0.0
+ active     phi   0.03      270.71              -12.50                  -8.71    123.30      0.0
+ active     phi   0.06      388.00               25.41                  18.18     22.03      0.0
+ active     phi   0.12      410.93               32.82                  23.44      0.00      0.0
+ active     phi   0.25      410.93               32.82                  23.44      0.00      0.0
+ active     tau   0.01      271.19              -12.35                  -8.58    122.40      0.0
+ active     tau   0.03      270.71              -12.50                  -8.71    123.30      0.0
+ active     tau   0.06      268.22              -13.31                  -9.36    127.31      0.0
+ active     tau   0.12      267.48              -13.55                  -9.55    128.92      0.0
+ active horizon   1.00      272.80              -11.83                  -8.36    123.37      0.0
+ active horizon   2.00      267.70              -13.48                  -9.51    127.41      0.0
+ active horizon   4.00      270.71              -12.50                  -8.71    123.30      0.0
+ active horizon   6.00      270.71              -12.50                  -8.71    123.30      0.0
+    all     phi   0.00        1.68              -99.46                 -93.89    433.64      0.0
+    all     phi   0.01        1.68              -99.46                 -95.64    187.30      0.0
+    all     phi   0.03        1.68              -99.46                 -95.86    157.12      0.0
+    all     phi   0.06      324.13                4.76                   3.55     82.38      0.0
+    all     phi   0.12      410.93               32.82                  23.44      0.00      0.0
+    all     phi   0.25      410.93               32.82                  23.44      0.00      0.0
+    all     tau   0.01        1.68              -99.46                 -96.18    112.60      0.0
+    all     tau   0.03        1.68              -99.46                 -95.86    157.12      0.0
+    all     tau   0.06        1.68              -99.46                 -95.41    220.34      0.0
+    all     tau   0.12        1.68              -99.46                 -94.71    317.77      0.0
+    all horizon   1.00        1.68              -99.46                 -96.14    117.29      0.0
+    all horizon   2.00        1.68              -99.46                 -96.06    129.26      0.0
+    all horizon   4.00        1.68              -99.46                 -95.86    157.12      0.0
+    all horizon   6.00        1.68              -99.46                 -95.85    158.28      0.0

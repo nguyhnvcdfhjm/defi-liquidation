@@ -1,0 +1,8 @@
+30 seed, 15 tick/lần chạy, cú sốc WETH -35%
+
+Chỉ số                                  Kênh BẬT (amm)   Kênh TẮT (external)
+Tỷ trọng nợ thanh lý gián tiếp (%)          51.5 ± 0.8             0.0 ± 0.0
+Nợ đã thanh lý (nghìn $)                1,246.5 ± 10.7           106.6 ± 7.7
+Nợ xấu (nghìn $)                          327.2 ± 14.1             0.0 ± 0.0
+
+Số seed có thanh lý gián tiếp: kênh bật 30/30, kênh tắt 0/30

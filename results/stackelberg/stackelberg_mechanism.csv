@@ -1,0 +1,5 @@
+﻿kappa,bonus_scale,so_khoan_thanh_ly,HF_truoc_trung_binh,HF_sau_trung_binh,ty_le_HF_sau_bang_0,so_khoan_HF_truoc>=0.9,ty_le_HF_giam_khi_HF_truoc>=0.9,so_khoan_HF_truoc<0.9,ty_le_HF_giam_khi_HF_truoc<0.9
+0.5,0.5,1940,0.586,0.483,0.206,201,0.0,1739,0.783
+0.5,1.0,1919,0.542,0.403,0.264,150,0.0,1769,0.88
+0.5,1.5,1797,0.522,0.363,0.3,126,0.0,1671,0.926
+0.5,2.0,1703,0.512,0.336,0.336,110,0.009,1593,0.959
