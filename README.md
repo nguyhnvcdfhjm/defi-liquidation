@@ -30,7 +30,7 @@ defi-lending-abm/
 │   ├── tab1_single_shock/  tab2_multi_shock/  stackelberg/  game_theory/
 │   └── tests.txt
 ├── figures/              Sáu hình dùng trong báo cáo và slide
-└── docs/                 Báo cáo Word, hướng dẫn đọc code, quy ước làm việc nhóm
+└── docs/                 Báo cáo Word
 ```
 
 ## Cài đặt (Windows)
@@ -57,7 +57,7 @@ Tất cả lệnh dưới đây chạy trong thư mục `src/`.
 | Tab 1: độ nhạy | `python run_sensitivity.py` | `tab1_run_sensitivity.txt` |
 | Tab 2: so sánh sốc đơn và sốc đa tài sản | `python run_scenarios.py` | `results/tab2_multi_shock/` |
 | Tab 2: quét hệ số sốc λ, 30 seed | `python run_tab2_multiseed.py` | `tab2_multiseed.csv` |
-| Cạnh tranh gas (đấu giá phí ưu tiên) | `python run_competition.py` | mục 7 của `docs/HUONG_DAN_DOC_CODE.md` |
+| Cạnh tranh gas (đấu giá phí ưu tiên) | `python run_competition.py` | kết quả in ra màn hình; mô tả trong báo cáo |
 | Stackelberg: lưới (κ, s), 10 seed | `python run_stackelberg.py` | `results/stackelberg/` |
 | Trò chơi giảm đòn bẩy của người vay | `python run_game_compare.py` | `results/game_theory/` |
 | Giao diện | `streamlit run app.py` | 3 tab: Sốc đơn, Sốc đa tài sản, Stackelberg |
@@ -86,19 +86,15 @@ Mỗi seed cho một quần thể 60 người vay khác nhau; các script dùng 
 - Oracle bám giá AMM là **giả định** của mô hình, không phải mô tả giao thức thực.
 - Quần thể người vay được sinh theo tham số tự chọn, chưa đối chiếu dữ liệu on-chain.
 - Follower trong phần Stackelberg là Liquidator tham lam cố định, nên kết quả là tối ưu của leader trên mô phỏng, chưa phải cân bằng Stackelberg chặt chẽ.
-- Monte Carlo với giá lịch sử (`run_montecarlo_historical.py`) có mã nhưng **chưa được chạy**; trò chơi người vay có nhiều cân bằng (xem mục 11 của `docs/HUONG_DAN_DOC_CODE.md`).
+- Monte Carlo với giá lịch sử (`run_montecarlo_historical.py`) ; trò chơi người vay có nhiều cân bằng (mô tả trong Phần II của báo cáo).
 - Hiệu chỉnh tham số theo Aave (`calibration.py`) chưa được dùng trong các kết quả trên.
 
 ## Thành viên
 
 | Họ tên | MSSV | Phần phụ trách |
 |---|---|---|
-| (điền) | (điền) | Mô hình, tích hợp mã nguồn |
-| (điền) | (điền) | (điền) |
-| (điền) | (điền) | (điền) |
+| Nguyễn Thị Yến | B23DCTC126 |  |
+| Trần Thùy Trang | B23DCTC110 |  |
+| Nguyễn Tống Xuân Mai | B23DCTC060 |  |
 
-Quy ước commit và nhánh: [`docs/QUY_UOC_LAM_VIEC_NHOM.md`](docs/QUY_UOC_LAM_VIEC_NHOM.md).
 
-## Giấy phép
-
-MIT (xem `LICENSE`).
