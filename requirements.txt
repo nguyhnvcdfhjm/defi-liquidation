@@ -1,0 +1,7 @@
+mesa>=3.0.0
+streamlit>=1.35.0
+plotly>=5.22.0
+networkx>=3.3
+pandas>=2.2.0
+pytest
+matplotlib>=3.8  # chỉ cần cho run_game_compare.py (vẽ hình, tùy chọn)

@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+.vscode/
+.idea/
+
+# Kết quả sinh ra khi chạy thử (kết quả chính thức nằm trong results/)
+src/out/
+src/simulation_results.csv
+src/prices_*.csv
+src/scenario_*.csv
+src/stackelberg_grid.csv
+src/borrowers_*.csv
+src/game_*.csv
+src/game_*.png
+
+# File tạm của Word / hệ điều hành
+~$*.docx
+.DS_Store
+Thumbs.db
